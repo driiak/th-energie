@@ -10,12 +10,12 @@
 <body>
 <header class="header">
   <a class="logo logo-image" href="#accueil"><img src="logo.jpg" alt="TH Énergie - Électricité générale"></a>
-  <button class="menu" aria-label="Ouvrir le menu">☰</button>
+  <button class="menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#a-propos">À propos</a>
     <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <a href="#fournisseurs">Fournisseurs</a><a href="#contact">Contact</a><a href="#avis">Avis</a>
   </nav>
 </header>
 
@@ -67,8 +67,28 @@
   </div>
 </section>
 
+<section id="fournisseurs" class="section suppliers">
+  <div class="section-label">03 · NOS FOURNISSEURS & MARQUES</div>
+  <div class="suppliers-heading">
+    <div><h2>Des partenaires reconnus<br><span>pour des installations fiables.</span></h2></div>
+    <p>Nous nous appuyons sur des distributeurs et des marques de référence du secteur électrique pour sélectionner du matériel adapté à chaque projet.</p>
+  </div>
+  <div class="supplier-grid" aria-label="Fournisseurs et marques utilisés par TH Énergie">
+    <div class="supplier-card rexel"><span class="supplier-wordmark">REXEL</span><small>Distribution électrique</small></div>
+    <div class="supplier-card schneider"><span class="supplier-wordmark">Schneider<br>Electric</span><small>Gestion de l'énergie</small></div>
+    <div class="supplier-card legrand"><span class="supplier-wordmark">legrand</span><small>Infrastructures électriques</small></div>
+    <div class="supplier-card del"><span class="supplier-wordmark">DEL ÉLECTRIQUE</span><small>Distribution électrique</small></div>
+    <div class="supplier-card eurom"><span class="supplier-wordmark">EUROM YESS</span><small>Matériel électrique</small></div>
+    <div class="supplier-card sonepar"><span class="supplier-wordmark">Sonepar</span><small>Distribution électrique</small></div>
+    <div class="supplier-card hager"><span class="supplier-wordmark">HAGER</span><small>Solutions électriques</small></div>
+    <div class="supplier-card abb"><span class="supplier-wordmark">ABB</span><small>Technologies électriques</small></div>
+    <div class="supplier-card eaton"><span class="supplier-wordmark">EATON</span><small>Gestion de l'énergie</small></div>
+  </div>
+  <p class="supplier-note">Les marques et enseignes citées sont présentées à titre informatif. Leurs noms et identités visuelles appartiennent à leurs propriétaires respectifs.</p>
+</section>
+
 <section id="contact" class="section contact">
-  <div class="section-label">03 · CONTACT</div>
+  <div class="section-label">04 · CONTACT</div>
   <div class="contact-grid">
     <div>
       <h2>Parlons de votre projet.</h2>
@@ -81,16 +101,41 @@
       </div>
     </div>
     <form id="contactForm">
-      <label>Nom<input required type="text" placeholder="Votre nom"></label>
-      <label>Téléphone<input required type="tel" placeholder="06 00 00 00 00"></label>
-      <label>E-mail<input type="email" placeholder="vous@exemple.fr"></label>
-      <label>Votre projet<textarea required rows="5" placeholder="Décrivez votre besoin..."></textarea></label>
+      <label>Nom<input name="name" required type="text" placeholder="Votre nom"></label>
+      <label>Téléphone<input name="phone" required type="tel" placeholder="06 00 00 00 00"></label>
+      <label>E-mail<input name="email" type="email" placeholder="vous@exemple.fr"></label>
+      <label>Votre projet<textarea name="project" required rows="5" placeholder="Décrivez votre besoin..."></textarea></label>
       <button class="btn primary" type="submit">Envoyer ma demande</button>
       <p id="formMessage" class="form-message"></p>
     </form>
   </div>
 </section>
+
+<section id="avis" class="reviews-section">
+  <div class="section-label">05 · AVIS CLIENTS</div>
+  <div class="reviews-head">
+    <div><h2>Votre retour compte.</h2><p>Consultez la fiche Google de TH Énergie et partagez votre expérience après une intervention.</p></div>
+    <div class="google-rating"><div class="rating-number">G</div><div><div class="stars">Google</div><strong>Fiche établissement</strong><small>Consulter les informations et avis</small></div></div>
+  </div>
+  <div class="reviews-actions">
+    <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=TH%20ENERGIE%2C%201%20Rue%20des%20Cades%2C%2034680%20Saint-Georges-d%27Orques" target="_blank" rel="noopener">Consulter la fiche Google</a>
+    <a class="btn outline-dark" href="https://www.google.com/maps/search/?api=1&query=TH%20ENERGIE%2C%201%20Rue%20des%20Cades%2C%2034680%20Saint-Georges-d%27Orques" target="_blank" rel="noopener">Partager un avis</a>
+  </div>
+</section>
+
 </main>
+
+
+<section class="qualification">
+  <div class="qualification-inner">
+    <div>
+      <div class="section-label">QUALIFICATION</div>
+      <h2>Un savoir-faire reconnu.</h2>
+      <p>TH Énergie est qualifiée <strong>Qualifelec</strong>, un gage de compétence et de professionnalisme pour vos travaux électriques.</p>
+    </div>
+    <div class="qualifelec-badge"><img src="qualifelec.jpg" alt="Qualifelec"></div>
+  </div>
+</section>
 
 <footer>
   <div class="logo logo-image"><img src="logo.jpg" alt="TH Énergie - Électricité générale"></div>
